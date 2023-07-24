@@ -70,5 +70,5 @@ library(ggplot2)
 nachFreq_data=NachTitanic%>%
            group_by(Survived)%>%
            summarise(Total=sum(Freq))
-ggplot(Freq_data, aes(x = factor(Survived), y = Total)) + geom_bar(stat = "identity") +
+ggplot(Freq_data, aes(x = factor(Survived), y = Total)) + geom_bar(stat = "identity")
 
